@@ -513,10 +513,10 @@ def menu():
     
 ###NoCut###
 if __name__ == "__main__":
-    if not os.path.exists(".server/upload"):
-        os.mkdir(".server/upload")
     if not os.path.exists(".server/ngrok") or not os.path.exists(".server/cloudflare"):
         os.system("bash setup.sh")
+    if not os.path.exists(".server/upload"):
+        os.mkdir(".server/upload")
     os.system("rm -rf .server/upload/* > /dev/null 2>&1")
     killer()
     menu()
