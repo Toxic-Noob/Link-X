@@ -55,7 +55,7 @@ install_ngrok() {
 	if [[ -e ".server/ngrok" ]]; then
 		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} Ngrok already installed."
 	else
-		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing ngrok..."${WHITE}
+		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing Ngrok..."${WHITE}
 		arch=`uname -m`
 		if [[ ("$arch" == *'arm'*) || ("$arch" == *'Android'*) ]]; then
 			download_ngrok 'https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip'
