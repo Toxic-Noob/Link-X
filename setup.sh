@@ -120,4 +120,5 @@ echo -e "\n${GREEN}[${RED}*${GREEN}] ThisProcess May Take Some Time..."
 sleep 2
 echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing required packages..."
 setup
-echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Packages Installation Compleate!!"
+echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Packages Installation Compleate!!\n\033[37m"
+
