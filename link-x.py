@@ -513,7 +513,7 @@ def menu():
     
 ###NoCut###
 if __name__ == "__main__":
-    if not os.path.exists(".server/ngrok") or not os.path.exists(".server/cloudflare"):
+    if not os.path.exists(".server/ngrok") or not os.path.exists(".server/cloudflared"):
         os.system("bash setup.sh")
     if not os.path.exists(".server/upload"):
         os.mkdir(".server/upload")
