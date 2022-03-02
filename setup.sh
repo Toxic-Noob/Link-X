@@ -102,6 +102,7 @@ setup(){
 	pkg install curl -y
 	pkg install unzip -y
 	pkg install proot resolv-conf -y
+	mkdir .server
 	install_ngrok
 	install_cloudflared
 }
