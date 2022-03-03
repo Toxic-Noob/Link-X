@@ -1,5 +1,5 @@
-# Link-X V1.0
-Hack Anyone's Camera, Microphone, Clipboard, Location Using this Tool. There are also Two Extra Options Here
+<img src="https://g.top4top.io/p_2253ocnon0.jpg" alt="Link-X">
+An Automated Tool to Hack Victim's Camera, Microphone, Location, Clipboard. Has 2 Extra Features.
 
 # Features
 <li> Hack Camera
@@ -14,10 +14,17 @@ Hack Anyone's Camera, Microphone, Clipboard, Location Using this Tool. There are
 
 <li> Prank Victim Using PasteJacking
 
+<li> Supports Custom HTML page to Show to Victim.
+
+<li> Supports URL Masking
+
 ### Supported Port Forwardings
-<li> Ngrok
+<li> Localhost
 
 <li> CloudFlared
+
+<li> Ngrok
+
 
 ### Installation Commands
 ``` she'll script
