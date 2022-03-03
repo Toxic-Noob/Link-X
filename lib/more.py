@@ -130,6 +130,10 @@ def mask_url(url, mask):
     
     return masked
 
+#ShortURL
+def short_url(url):
+    short = str(s.shorten(url)[0])
+    return short
 
 
 #ToolUpdate#
