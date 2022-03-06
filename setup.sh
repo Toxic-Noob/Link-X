@@ -96,12 +96,12 @@ setup(){
 	apt upgrade -y
 	pkg install python git -y
 	pip install requests
-	pip install gdshortener
 	pkg install php -y
 	pkg install wget -y
 	pkg install curl -y
 	pkg install unzip -y
 	pkg install proot resolv-conf -y
+	termux-setup-storage
 	mkdir .server
 	install_ngrok
 	install_cloudflared
