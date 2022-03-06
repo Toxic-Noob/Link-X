@@ -166,9 +166,9 @@ def update():
         time.sleep(1)
         os.system("cd .. && rm -rf Link-X && git clone https://github.com/Toxic-Noob/Link-X > /dev/null 2>&1")
         psb("\n\033[92m    \033[94m[\033[37m*\033[94m]\033[92m Tool Updted Successfully...")
-        psb("\n    \033[94m[\033[37m*\033[94m]\033[92m Starting Tool...")
+        psb("\n    \033[94m[\033[37m*\033[94m]\033[92m Starting Tool...\033[37m")
         time.sleep(1)
-        os.system("cd .. && cd Link-X && python link-x.py")
+        os.system("cd .. && cd Link-X && clear && python link-x.py")
     else:
         psb("\n\033[92m    \033[94m[\033[37m*\033[94m]\033[92m You Are Using The Latest Version Of Link-X...")
         psb("\n    \033[94m[\033[37m*\033[94m]\033[92m Thanks For Using Our Tool..")
