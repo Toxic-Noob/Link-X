@@ -29,7 +29,7 @@ def logo():
     print("\033[94m│ \033[95mAuthor : ToxicNoob                     \033[94m│".center(columns+14))
     print("│ \033[95mTool   : Hack With Link                \033[94m│".center(columns+8))
     print("│ \033[95mGitHub : https://github.com/Toxic-Noob \033[94m│".center(columns+8))
-    print("│ \033[95mCoder  : HunterSl4d3             \033[37mV1.0  \033[94m│".center(columns+14))
+    print("│ \033[95mCoder  : HunterSl4d3             \033[37mV1.1  \033[94m│".center(columns+14))
     print("\033[94m└────────────────────────────────────────┘".center(columns+4))
 
 #SavingData#
