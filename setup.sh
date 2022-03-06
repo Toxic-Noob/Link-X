@@ -116,7 +116,7 @@ else
         figlet ToxicNoob
 fi
 echo -e "\n${GREEN}[☕]${CYAN} Go Get a Coffee..."
-echo -e "\n${GREEN}[${RED}*${GREEN}] ThisProcess May Take Some Time..."
+echo -e "\n${GREEN}[${RED}*${GREEN}] This Process May Take Some Time..."
 sleep 2
 echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing required packages..."
 setup
