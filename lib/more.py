@@ -6,9 +6,6 @@ import os
 import sys
 import json
 import requests
-import gdshortener
-
-s = gdshortener.ISGDShortener()
 
 
 columns = shutil.get_terminal_size().columns
@@ -118,21 +115,26 @@ def print_details(data):
 
 #MaskURL
 def mask_url(url, mask):
-    short = str(s.shorten(url)[0])
+    short = requests.get("https://is.gd/create.php?format=simple&url="+url).text
+    if ("//is.gd/" in short):
+        mask = mask.replace(" ", "-").replace("https://", "").replace("http://", "").replace("/", "-").replace("?", "")
     
-    mask = mask.replace(" ", "-").replace("https://", "").replace("http://", "").replace("/", "-").replace("?", "")
+        head = "https://"
     
-    head = "https://"
+        tail = short.replace("https://", "").replace("http://", "")
     
-    tail = short.replace("https://", "").replace("http://", "")
+        masked = head+mask+"@"+tail
     
-    masked = head+mask+"@"+tail
+    else:
+        masked = ""
     
     return masked
 
 #ShortURL
 def short_url(url):
-    short = str(s.shorten(url)[0])
+    short = requests.get("https://is.gd/create.php?format=simple&url="+url).text
+    if not ("//is.gd/" in short):
+        short = ""
     return short
 
 
