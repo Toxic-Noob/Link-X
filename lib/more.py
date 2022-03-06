@@ -162,9 +162,6 @@ def update():
     
     if not (tool_ver == main_ver):
         psb("\n\033[92m    \033[94m[\033[37m*\033[94m]\033[92m Tool Update Found!")
-        psb("\n\033[92m    [\033[91m!\033[92m] Backup Your Hacked Datas. Because After Tool Update, All Data Will Be Eresed...")
-        time.sleep(1)
-        l = input("\n\033[92m    \033[94m[\033[37m*\033[94m]\033[92m Press Enter To Update Tool...\033[37m")
         psb("\n\033[92m    \033[94m[\033[37m*\033[94m]\033[92m Updating Tool...")
         time.sleep(1)
         os.system("cd .. && rm -rf Link-X && git clone https://github.com/Toxic-Noob/Link-X > /dev/null 2>&1")
