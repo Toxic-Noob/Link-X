@@ -176,7 +176,7 @@ def update():
         psb("\n\033[92m    \033[94m[\033[37m*\033[94m]\033[92m You Are Using The Latest Version Of Link-X...")
         psb("\n    \033[94m[\033[37m*\033[94m]\033[92m Thanks For Using Our Tool..")
         l = input("\n\033[92m    \033[94m[\033[37m*\033[94m]\033[92m Press Enter To Countinue...\033[37m")
-        os.system("python ")
+        os.system("python link-x.py")
     
 
 #ToolExitMassage#
