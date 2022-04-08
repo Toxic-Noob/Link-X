@@ -51,7 +51,7 @@ python link-x.py
 ## Contact
 [*] Contact with Me via Email
 
-toxicnoob.sl4d3.official@gmail.com
+ContactWithToxicNoob@gmail.com
 
 ### Tool ScreenShots :
 <img src="https://l.top4top.io/p_2256b4bpl0.jpg" alt="Link-X 1">
