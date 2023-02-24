@@ -90,13 +90,16 @@ def update():
         sys.exit("")
     
     if not (oldVersion == newVersion):
-        psb("\n    cWhite[cGreen*cWhite] Tool Update Found!")
-        cPrint("    [*] Updating Tool...")
+        psb("\n    cWhite[cGreen!cWhite] Tool Update Found!")
+        cPrint("    [!] Updating Tool...")
         os.system("cd ../ && rm -rf Link-X && git clone https://github.com/toxic-noob/Link-X > /dev/null 2>&1")
         psb("\n    [cGreen*cWhite] Update Complete!")
         psb("    [cGreen*cWhite] Starting new Version...")
         os.system("cd ../Link-X && python link-x.py")
-        
+    else:
+        psb("\n    cWhite[cGreen*cWhite] Tool is already Up to Date!")
+        time.sleep(0.8)
+        input(cPrint("\n    [cGreen*cWhite] Press Enter to Continue...", True))
 
 # Print Device Location
 def printLocation(tmp):
