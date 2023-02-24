@@ -10,6 +10,7 @@
 * Used *Cloudflared Browser Checking* as Web view Method. Instead of the Old, Weird, **Press To Continue**
 * Tunnel Errors Solved
 * Excluded using of some Heavy Libraries of Python
+* Removed useless, user's problematic Functionality: Custom Web Page
 
 ### Attack Methods:
 * Camera
