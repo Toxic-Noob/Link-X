@@ -59,8 +59,8 @@ python link-x.py
 * This tool is only for Educational Purpose
 * ToxicNoob Inc. will not be responsible for any Misuse
 
-### Contact
-* Contact with Me via <a href="mailto:tocicnoob.sl4d3.official@gmail.com">Email</a>
+#### Every Suggestions are Welcomed
+* Contact via <a href="mailto:tocicnoob.sl4d3.official@gmail.com">Email</a>
 
 ### Tool ScreenShots :
 ![Link-X Screenshot](https://j.top4top.io/p_2611er4g04.jpg)
