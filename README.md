@@ -1,60 +1,65 @@
-# Coming...
-
-
 <img src="https://g.top4top.io/p_2253ocnon0.jpg" alt="Link-X">
-An Automated Tool to Hack Victim's Camera, Microphone, Location, Clipboard. Has 2 Extra Features.
+<b><p align="center">Hack via Link</p></b>
 
-## Version 1.1 Update
-<li> Fixed Some Major Bugs
+## Version 2.0 Update:
+* Codded Totally From Scratch
+* New, Clean Interface
+* All Script Files are Python
+* Index Folders Shorted
+> All Web View Files are used from Same Index files. So, no extra folders for every Attack Method.
+* Used *Cloudflared Browser Checking* as Web view Method. Instead of the Old, Weird, **Press To Continue**
+* Tunnel Errors Solved
+* Excluded using of some Heavy Libraries of Python
 
-<li> Data Saving Directory Changed To Storage Folder
+### Attack Methods:
+* Camera
+* Voice
+* Clipboard
+* Location
+* Paste Jacking
+> Not a Hacking method, But worth including
+* Device Details
+  - Added Some More Grabing Methods
+> Grab as much Information as possible from Victim's Device
+* Upcoming:
+  - Embed Methods (Add Methods Together)
 
-# Features
-<li> Hack Camera
+### Tunnel Methods:
+* Localhost (For developers)
+* Ngrok (5 Trials)
+* Cloudflared (Best Usages)
 
-<li> Hack Microphone
-
-<li> Hack Clipboard
-
-<li> Hack Location 
-
-<li> Get So Many Details about Victim's Device. As much as Possible...
-
-<li> Prank Victim Using PasteJacking
-
-<li> Supports Custom HTML page to Show to Victim.
-
-<li> Supports URL Masking
-
-### Supported Port Forwardings
-<li> Localhost
-
-<li> CloudFlared
-
-<li> Ngrok
-
+### Methods Overview:
+* Camera
+> Hack Victim's front Camera and take pictures every (2/3) seconds
+* Voice
+> Hack Victim's Microphone and Record 5 Seconds audio
+* Clipboard
+> Hack Victim's Clipboard and Grab last copied Text
+* Location
+> Hack Victim's Location and Show exact Location
+* Paste Jacking
+> Not actually a hacking Method. Show a Text, and Copy another Text
+* Device Details
+> Probably my favorite Attack Method. Grab the much Information as possible from Victim's Device. Including: Screen Info, Battery Info, Connection Info, Country Info etc...
 
 ### Installation Commands
-``` she'll script
+```
 apt update -y
 apt upgrade -y
 pkg install python git -y
 git clone https://github.com/Toxic-Noob/Link-X
 cd Link-X
-bash setup.sh
+python setup.py
 python link-x.py
 ```
 
-# Note
-[*] USE IT, AT YOUR OWN RISK
+## Note:
+* This tool is only for Educational Purpose
+* ToxicNoob Inc. will not be responsible for any Misuse
 
-[*] ToxicNoob is not Responsible for Any Misuse
-
-
-## Contact
-[*] Contact with Me via Email
-
-ContactWithToxicNoob@gmail.com
+### Contact
+* Contact with Me via <a href="mailto:tocicnoob.sl4d3.official@gmail.com">Email</a>
 
 ### Tool ScreenShots :
 <img src="https://l.top4top.io/p_2256b4bpl0.jpg" alt="Link-X 1">
@@ -63,8 +68,5 @@ ContactWithToxicNoob@gmail.com
 <img src="https://j.top4top.io/p_2256rqag21.jpg" alt="Link-X 4">
 
 
-
 ### Visitors :
-
-
 ![Visitor Count](https://profile-counter.glitch.me/Toxic-Noob/count.svg)
