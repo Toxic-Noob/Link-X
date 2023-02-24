@@ -60,7 +60,7 @@ python link-x.py
 * ToxicNoob Inc. will not be responsible for any Misuse
 
 #### Every Suggestions are Welcomed
-* Contact via <a href="mailto:tocicnoob.sl4d3.official@gmail.com">Email</a>
+* Contact via <a href="mailto:toxicnoob.sl4d3.official@gmail.com">Email</a>
 
 ### Tool ScreenShots :
 ![Link-X Screenshot](https://j.top4top.io/p_2611er4g04.jpg)
